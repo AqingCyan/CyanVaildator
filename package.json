@@ -1,0 +1,15 @@
+{
+  "name": "validator",
+  "version": "1.0.0",
+  "description": "Check if the variable meets the requirements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dayjs": "^1.8.14"
+  }
+}
