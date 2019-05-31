@@ -19,7 +19,7 @@ export default function formatDate(date = (new Date), config = {}) {
     Data.year = dayjs(date).year()
   }
   if (conf.getMonth) {
-    Data.month = dayjs(date).month()
+    Data.month = dayjs(date).month() + 1
   }
   if (conf.getDay) {
     Data.day = dayjs(date).date()
