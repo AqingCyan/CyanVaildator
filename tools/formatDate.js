@@ -11,7 +11,7 @@ const defaultOptions = {
  * @param {string} date 
  * @param {object} config 
  */
-function formatDate(date = (new Date), config = {}) {
+export default function formatDate(date = (new Date), config = {}) {
   const conf = Object.assign({}, defaultOptions, config)
   const Data = {}
   Data.formatResult = dayjs(date).format(conf.formatOption)
@@ -22,7 +22,7 @@ function formatDate(date = (new Date), config = {}) {
     Data.month = dayjs(date).month()
   }
   if (conf.getDay) {
-    Data.day = dayjs(date).day()
+    Data.day = dayjs(date).date()
   }
   return Data
 }
