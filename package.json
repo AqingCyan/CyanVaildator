@@ -4,13 +4,17 @@
   "description": "Check if the variable meets the requirements",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
     "dayjs": "^1.8.14",
+    "jest": "^24.8.0",
     "rollup": "^1.13.0"
   }
 }
