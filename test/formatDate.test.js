@@ -33,7 +33,7 @@ test('test2', () => {
   expect(formatDate(date, config)).toEqual(result)
 })
 
-test('test2', () => {
+test('test3', () => {
   const date = '19980602'
   const config = {
     formatOption: 'YYYY,MM,DD',
@@ -50,7 +50,7 @@ test('test2', () => {
   expect(formatDate(date, config)).toEqual(result)
 })
 
-test('test5', () => {
+test('test4', () => {
   const date = new Date
   const year = date.getFullYear()
   const month = date.getMonth() > 9 ? date.getMonth() + 1 : '0' + (date.getMonth() + 1)
@@ -59,4 +59,19 @@ test('test5', () => {
     formatResult: `${year}-${month}-${day}`
   }
   expect(formatDate()).toEqual(result)
+})
+
+test('test5', () => {
+  const date = new Date
+  const config = {
+    getYear: true
+  }
+  const year = date.getFullYear()
+  const month = date.getMonth() > 9 ? date.getMonth() + 1 : '0' + (date.getMonth() + 1)
+  const day = date.getDate() > 9 ? date.getDate() : '0' + date.getDate()
+  const result = {
+    formatResult: `${year}-${month}-${day}`,
+    year: year
+  }
+  expect(formatDate(config)).toEqual(result)
 })
