@@ -1,13 +1,14 @@
 {
   "name": "validator",
-  "version": "1.0.0",
-  "description": "Check if the variable meets the requirements",
+  "version": "0.0.1",
+  "description": "统一标准校验器，以及一些工具函数",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "build": "rollup -c"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["validator"],
+  "author": "AqingCyan",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -15,6 +16,9 @@
     "babel-jest": "^24.8.0",
     "dayjs": "^1.8.14",
     "jest": "^24.8.0",
-    "rollup": "^1.13.0"
+    "rollup": "^1.13.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.1"
   }
 }
